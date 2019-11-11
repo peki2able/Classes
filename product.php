@@ -1,3 +1,4 @@
+
 <?php
 	class Pcl_Product
 	{
@@ -20,4 +21,4 @@
 			return $this->_title;
 		}
 	}
-?>
+	
