@@ -24,5 +24,9 @@
 		public function setProductTitle($title){
 			return $this->_title = $title;
 		}
+
+		public function deleteProductTitle(){
+			return $this->_title = '';
+		}
 	}
 	
