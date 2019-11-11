@@ -20,5 +20,9 @@
 		public function getProductTitle(){
 			return $this->_title;
 		}
+
+		public function setProductTitle($title){
+			return $this->_title = $title;
+		}
 	}
 	
