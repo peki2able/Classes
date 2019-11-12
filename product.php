@@ -3,7 +3,7 @@
 	class Pcl_Product
 	{
 		// properties defined here
-		protected $_type = 'Book';
+		protected $_type = 'Book: ';
 		protected $_title = 'PHP';
 		
 		
@@ -11,7 +11,6 @@
 		public function getProductType(){
 			return $this->_type;
 		}
-		
 		
 		public function setProductType($type){
 			return $this->_type = $type;
@@ -27,6 +26,10 @@
 
 		public function deleteProductTitle(){
 			return $this->_title = '';
+		}
+
+		public function deleteProductType(){
+			return $this->_type = '';
 		}
 	}
 	
