@@ -9,12 +9,12 @@
 		
 		// methods defined here
 		public function getProductType(){
-			return $this->_type;
+				return $this->_type;	
 		}
 		
 		public function setProductType($type){
 			if(is_numeric($type)){
-				$this->_type ='String is accepted value - Num is given';
+				 return $this->_type ='String is accepted value - Num is given'; 
 			}else{
 				return $this->_type = $type;
 			}
@@ -22,12 +22,12 @@
 		}
 
 		public function getProductTitle(){
-			return $this->_title;
+				return $this->_title;
 		}
 
 		public function setProductTitle($title){
 			if(is_numeric($title)){
-				$this->_title ='String is accepted value - Num is given';
+				return $this->_title ='String is accepted value - Num is given';
 			}else{
 				return $this->_title = $title;
 			}

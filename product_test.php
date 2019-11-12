@@ -2,15 +2,17 @@
 
 /* include the Class file*/
 require_once 'product.php';
-
+/*Create instance of the Class*/
 $product = new Pcl_Product();
 
+/*Delete any default value for product Type
+  Than asign new value and print it on screen*/
+$product->deleteProductType();
+ $product->setProductType('Book: ');
+  echo $product->getProductType();
 
-echo $product->getProductType();
-
-$product->setProductTitle('PHP Solutions');
+/*Delete any default value for product Title
+  Than asign new value and print it on screen*/
 $product->deleteProductTitle();
-echo $product->getProductTitle();
-
-$product->setProductTitle('PHP: '.'Web Solutions made Easy');
-echo $product->getProductTitle();
+ $product->setProductTitle('PHP Solutions');
+  echo $product->getProductTitle();
