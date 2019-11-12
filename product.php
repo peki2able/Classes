@@ -13,7 +13,12 @@
 		}
 		
 		public function setProductType($type){
-			return $this->_type = $type;
+			if(is_numeric($type)){
+				$this->_type ='String is accepted value - Num is given';
+			}else{
+				return $this->_type = $type;
+			}
+			
 		}
 
 		public function getProductTitle(){
@@ -21,7 +26,12 @@
 		}
 
 		public function setProductTitle($title){
-			return $this->_title = $title;
+			if(is_numeric($title)){
+				$this->_title ='String is accepted value - Num is given';
+			}else{
+				return $this->_title = $title;
+			}
+			
 		}
 
 		public function deleteProductTitle(){
@@ -31,5 +41,6 @@
 		public function deleteProductType(){
 			return $this->_type = '';
 		}
+
 	}
 	

@@ -12,5 +12,5 @@ $product->setProductTitle('PHP Solutions');
 $product->deleteProductTitle();
 echo $product->getProductTitle();
 
-$product->setProductTitle('PHP & MySQL');
+$product->setProductTitle('PHP: '.'Web Solutions made Easy');
 echo $product->getProductTitle();
